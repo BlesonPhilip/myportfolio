@@ -1,10 +1,11 @@
 import React from "react";
-import Nav from "./components/Navbar/nav";
+
+import Index from "./pages/index";
 
 const App = () => {
   return (
     <div>
-      <Nav />
+      <Index />
     </div>
   );
 };
