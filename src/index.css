@@ -6,15 +6,30 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans", Arial, sans-serif;
 }
 
 :root {
   --primary-color: #ffdb39;
+  --primary-dark: #f7c400;
+  --primary-light: #ffec9e;
 }
+
 body {
-  background-image: url(assets/body-bg.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.header-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  position: relative;
 }

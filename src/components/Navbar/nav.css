@@ -5,11 +5,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 12%;
+  position: relative;
 }
-.navcss logo a {
+
+.navcss .logo a {
   font-size: 45px;
   font-weight: 800;
-  background: linear-gradient(90deg, #ffdb39, #f78502, 50%);
+  background: rgb(255, 231, 231);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -17,4 +19,75 @@
 .navcss ul li {
   display: inline-block;
   margin: 0 12px;
+}
+
+.navcss ul li a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ddd;
+  position: relative;
+}
+
+.navcss ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: 0.6s;
+}
+
+.navcss ul li:hover a::after {
+  width: 100%;
+}
+
+.navcss ul li:hover a {
+  color: var(--primary-color);
+}
+
+#bars {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #bars {
+    display: flex;
+  }
+
+  .navcss ul {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background-color: #1e1e1e; /* Improved background for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for visual depth */
+    transition: 0.6s;
+    z-index: 9999;
+  }
+
+  .navcss ul li {
+    display: block;
+    padding: 30px 0;
+    padding-left: 12%;
+    border-bottom: 1px solid #010000;
+  }
+
+  .navcss ul li a {
+    color: wheat;
+  }
+
+  .navcss ul.openMenu {
+    left: 0;
+  }
 }
