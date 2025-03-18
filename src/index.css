@@ -47,7 +47,7 @@ button {
 }
 button::after {
   content: "Download Now";
-  top: auto;
+  top: 0;
   position: absolute;
   left: 0;
   width: 100%;
