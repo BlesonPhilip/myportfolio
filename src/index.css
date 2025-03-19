@@ -70,6 +70,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 80px 12%;
+  width: 100%;
 }
 
 .SectionTitle {

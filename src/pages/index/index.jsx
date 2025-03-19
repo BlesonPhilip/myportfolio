@@ -48,7 +48,7 @@ const Index = () => {
         <h2 className="SectionTitle">About Us</h2>
         <div className="about">
           <div className="aboutImage">
-            <img src="about-hero.png" alt="" />
+            <img src="a.jpg" alt="" />
           </div>
           <div className="aboutContent">
             <div className="aboutCard">

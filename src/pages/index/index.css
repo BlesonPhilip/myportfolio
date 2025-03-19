@@ -182,4 +182,25 @@
 
 .about {
   width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.about .aboutImage {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .aboutImage img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about .aboutContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
