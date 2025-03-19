@@ -85,8 +85,78 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="Experience" className="Experience_Wrapper">
+      <section id="Experience" className="Experience_container">
         <h2 className="SectionTitle">My Experience</h2>
+        <div className="Experience">
+          <div className="skills_wrapper">
+            <h3>My skills</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              accusantium facilis quia magni sequi quas laudantium mollitia at a
+              tenetur debitis quis qui impedit nesciunt repudiandae vitae, iste
+              est placeat.
+            </p>
+            <div className="skills">
+              <div className="skill">
+                <h4>HTML</h4>
+                <div className="skillBar skillHtml" data-value="90%"></div>
+              </div>
+
+              <div className="skill">
+                <h4>CSS</h4>
+                <div className="skillBar skillCss" data-value="80%"></div>
+              </div>
+              <div className="skill">
+                <h4>JavaScript</h4>
+                <div className="skillBar skillJs" data-value="75%"></div>
+              </div>
+              <div className="skill">
+                <h4>React JS</h4>
+                <div className="skillBar skillReact" data-value="60%"></div>
+              </div>
+              <div className="skill">
+                <h4>Tailwind CSS</h4>
+                <div className="skillBar skillTwail" data-value="70%"></div>
+              </div>
+              <div className="skill">
+                <h4>Node JS</h4>
+                <div className="skillBar skillNode" data-value="60%"></div>
+              </div>
+            </div>
+          </div>
+          <div className="Experience_wrapper">
+            <div className="Experience_Card">
+              <h3>Software Developer</h3>
+              <p>Dec 2024 - Jan 2025</p>
+              <ul>
+                <li>Developed Portfolio App</li>
+                <li>Developed Weather App</li>
+                <li>Developed Todo App</li>
+                <li>Developed Calculator App</li>
+              </ul>
+            </div>
+            <div className="Experience_Card">
+              <h3>Software Developer</h3>
+              <p>Dec 2024 - Jan 2025</p>
+              <ul>
+                <li>Developed Portfolio App</li>
+                <li>Developed Weather App</li>
+                <li>Developed Todo App</li>
+                <li>Developed Calculator App</li>
+              </ul>
+            </div>
+            <div className="Experience_Card">
+              <h3>Software Developer</h3>
+              <p>Dec 2024 - Jan 2025</p>
+              <ul>
+                <li>Developed Portfolio App</li>
+                <li>Developed Weather App</li>
+                <li>Developed Todo App</li>
+                <li>Developed Calculator App</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
