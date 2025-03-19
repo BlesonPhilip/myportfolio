@@ -25,8 +25,10 @@ const Index = () => {
               </span>
             </p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              voluptate aliquam natus obcaecati officia quas soluta fuga enim .
+              A dedicated MERN stack developer fresher with a strong foundation
+              in MongoDB, Express.js, React, and Node.js. Equipped with web
+              development skills, problem-solving abilities, and a passion for
+              creating dynamic and user-friendly applications.
             </p>
             <div className="social">
               <i className="ri-facebook-line"></i>
@@ -34,7 +36,17 @@ const Index = () => {
               <i className="ri-twitter-x-line"></i>
               <i className="ri-github-line"></i>
             </div>
-            <button>
+            {/* <button>
+              CV <i className="ri-file-list-3-line"></i>
+            </button> */}
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "Bleson Philip.pdf"; // Path to your CV file
+                link.download = "Bleson Philip.pdf"; // Suggested download filename
+                link.click();
+              }}
+            >
               CV <i className="ri-file-list-3-line"></i>
             </button>
           </div>
@@ -56,8 +68,10 @@ const Index = () => {
               <div className="aboutCardContent">
                 <h3>Frontend Developer</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  incidunt rem inventore consectetur doloremque eius!
+                  Skilled in building responsive and interactive web
+                  applications using React, HTML, CSS, and JavaScript.
+                  Passionate about creating seamless user experiences and
+                  implementing modern design principles.
                 </p>
               </div>
             </div>
@@ -66,8 +80,10 @@ const Index = () => {
               <div className="aboutCardContent">
                 <h3>Backend Developer</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  incidunt rem inventore consectetur doloremque eius!
+                  Proficient in building scalable and efficient server-side
+                  applications using Node.js and Express.js. Experienced in
+                  working with databases like MongoDB and implementing RESTful
+                  APIs for seamless data communication.
                 </p>
               </div>
             </div>
@@ -76,8 +92,10 @@ const Index = () => {
               <div className="aboutCardContent">
                 <h3>Ui / Ux Designer</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                  incidunt rem inventore consectetur doloremque eius!
+                  Focused on creating intuitive and user-friendly interfaces
+                  with a strong understanding of design principles. Skilled in
+                  translating ideas into engaging visual designs that enhance
+                  user experience.
                 </p>
               </div>
             </div>
@@ -91,10 +109,12 @@ const Index = () => {
           <div className="skills_wrapper">
             <h3>My skills</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              accusantium facilis quia magni sequi quas laudantium mollitia at a
-              tenetur debitis quis qui impedit nesciunt repudiandae vitae, iste
-              est placeat.
+              Proficient in MERN stack development with expertise in MongoDB,
+              Express.js, React, and Node.js. Skilled in creating responsive web
+              designs using HTML, CSS, and JavaScript. Experienced in software
+              testing concepts, SDLC models, and database management with SQL
+              and MongoDB. Dedicated to writing clean, efficient, and
+              maintainable code.
             </p>
             <div className="skills">
               <div className="skill">
@@ -167,49 +187,49 @@ const Index = () => {
             <div className="project_content">
               <h3>Calculator</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
-                cupiditate velit saepe quam amet ad ducimus asperiores
-                exercitationem, quidem deserunt eos odit animi!
+                A user-friendly calculator web application built using HTML,
+                CSS, and JavaScript. Designed to perform basic arithmetic
+                operations with a clean interface and responsive layout for
+                seamless usability across devices.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
           </div>
           <div className="project">
-            <img src="portfolio-image-01.png" alt="1" />
+            <img src="portfolio-image-02.png" alt="1" />
             <div className="project_content">
               <h3>Weather App</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
-                cupiditate velit saepe quam amet ad ducimus asperiores
-                exercitationem, quidem deserunt eos odit animi!
+                A dynamic weather application built using HTML, CSS, and
+                JavaScript that provides real-time weather updates. Features
+                include temperature details, weather conditions, and
+                location-based forecasts for an enhanced user experience.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
           </div>
           <div className="project">
-            <img src="portfolio-image-01.png" alt="1" />
+            <img src="portfolio-image-03.png" alt="1" />
             <div className="project_content">
               <h3>Todo-App</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
-                cupiditate velit saepe quam amet ad ducimus asperiores
-                exercitationem, quidem deserunt eos odit animi!
+                A simple yet efficient task management application built using
+                React. Allows users to add, edit, and delete tasks with a clean
+                and intuitive interface. Designed to improve productivity
+                through organized task tracking.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
           </div>
           <div className="project">
-            <img src="portfolio-image-01.png" alt="1" />
+            <img src="portfolio-image-04.png" alt="1" />
             <div className="project_content">
               <h3>Portfolio</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
-                cupiditate velit saepe quam amet ad ducimus asperiores
-                exercitationem, quidem deserunt eos odit animi!
+                A personal portfolio website built using React to showcase
+                skills, projects, and achievements. Designed with a modern UI,
+                responsive layout, and interactive elements to provide a
+                seamless browsing experience for visitors.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
