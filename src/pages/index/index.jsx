@@ -158,6 +158,111 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section id="Projects" className="project_container">
+        <h2 className="SectionTitle">My Projects</h2>
+        <div className="projects">
+          <div className="project">
+            <img src="portfolio-image-01.png" alt="1" />
+            <div className="project_content">
+              <h3>Calculator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
+                cupiditate velit saepe quam amet ad ducimus asperiores
+                exercitationem, quidem deserunt eos odit animi!
+              </p>
+              <i className="ri-arrow-right-line"></i>
+            </div>
+          </div>
+          <div className="project">
+            <img src="portfolio-image-01.png" alt="1" />
+            <div className="project_content">
+              <h3>Weather App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
+                cupiditate velit saepe quam amet ad ducimus asperiores
+                exercitationem, quidem deserunt eos odit animi!
+              </p>
+              <i className="ri-arrow-right-line"></i>
+            </div>
+          </div>
+          <div className="project">
+            <img src="portfolio-image-01.png" alt="1" />
+            <div className="project_content">
+              <h3>Todo-App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
+                cupiditate velit saepe quam amet ad ducimus asperiores
+                exercitationem, quidem deserunt eos odit animi!
+              </p>
+              <i className="ri-arrow-right-line"></i>
+            </div>
+          </div>
+          <div className="project">
+            <img src="portfolio-image-01.png" alt="1" />
+            <div className="project_content">
+              <h3>Portfolio</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                assumenda consectetur nostrum. Nesciunt cum officiis, rerum
+                cupiditate velit saepe quam amet ad ducimus asperiores
+                exercitationem, quidem deserunt eos odit animi!
+              </p>
+              <i className="ri-arrow-right-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contact" className="contact_wrapper">
+        <h3 className="SectionTitle"> Get In Touch</h3>
+        <div className="contact">
+          <div className="contact_form">
+            <h4>Send a Message</h4>
+            <div className="input_wrapper">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <div className="input_wrapper">
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Enter phone" />
+            </div>
+            <textarea placeholder="Message"></textarea>
+            <button className="s">Submit</button>
+          </div>
+          <div className="contact_details">
+            <h4>Contact Info</h4>
+            <div className="info_wrapper">
+              <i className="ri-phone-line"></i>
+              <span>+91 8606092692</span>
+            </div>
+            <div className="info_wrapper">
+              <i className="ri-mail-line"></i>
+              <span>example@gmail.com</span>
+            </div>
+            <div className="social">
+              <i className="ri-instagram-line"></i>
+              <i className="ri-facebook-line"></i>
+              <i className="ri-twitter-x-line"></i>
+              <i className="ri-youtube-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="footer">
+        <div className="footerLinks">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#Experience">Experience</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <p>@copyright 2025 all rights reserved</p>
+      </section>
     </div>
   );
 };
