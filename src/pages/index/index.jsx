@@ -84,6 +84,10 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section id="Experience" className="Experience_Wrapper">
+        <h2 className="SectionTitle">My Experience</h2>
+      </section>
     </div>
   );
 };
