@@ -17,9 +17,7 @@ const Index = () => {
             </p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              voluptate aliquam natus obcaecati officia quas soluta fuga enim
-              quae nulla voluptatem sequi quam veritatis tempore doloribus,
-              alias ex esse eos.
+              voluptate aliquam natus obcaecati officia quas soluta fuga enim .
             </p>
             <div className="social">
               <i className="ri-facebook-line"></i>
@@ -32,7 +30,7 @@ const Index = () => {
             </button>
           </div>
           <div className="headerImage">
-            <img src="hero-image.jpg" alt="hero-img" />
+            <img src="b.jpg" alt="hero-img" />
             <div className="borderAnimation"></div>
           </div>
         </div>

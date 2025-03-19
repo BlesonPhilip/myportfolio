@@ -56,3 +56,81 @@
 /* .headerImage img {
   width: 300px;
 } */
+
+.headerImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+
+.headerImage img {
+  width: 550px;
+  height: 550px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.borderAnimation {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: conic-gradient(
+      from var(--angle),
+      transparent 70%,
+      var(--primary-color) 72%
+    );
+    border-radius: 50%;
+    animation: spin 2s infinite linear;
+  }
+  &::before {
+    filter: blur(50px);
+    opacity: 0.5;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .headerImage img {
+    width: 500px;
+    height: 500px;
+  }
+  .borderAnimation {
+    position: absolute;
+    height: 505px;
+    width: 505px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .headerContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.headerContainer .headerContent {
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  align-items: center;
+}
