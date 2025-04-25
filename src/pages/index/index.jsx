@@ -11,7 +11,7 @@ const Index = () => {
 
         <div className="headerContainer">
           <div className="headerContent">
-            <h5>Hello I m</h5>
+            <h5>Hello, I'm</h5>
             <h1>Bleson Philip</h1>
             <p>
               A Passionate &nbsp;
@@ -42,8 +42,8 @@ const Index = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "Bleson Philip.pdf"; // Path to your CV file
-                link.download = "Bleson Philip.pdf"; // Suggested download filename
+                link.href = "Bleson Philip Cv.pdf"; // Path to your CV file
+                link.download = "Bleson Philip Cv.pdf"; // Suggested download filename
                 link.click();
               }}
             >
@@ -51,13 +51,13 @@ const Index = () => {
             </button>
           </div>
           <div className="headerImage">
-            <img src="f.jpg" alt="hero-img" />
+            <img src="f2.jpg" alt="hero-img" />
             <div className="borderAnimation"></div>
           </div>
         </div>
       </div>
       <section id="about" className="about_wrapper">
-        <h2 className="SectionTitle">About Us</h2>
+        <h2 className="SectionTitle">About Me</h2>
         <div className="about">
           <div className="aboutImage">
             <img src="a.jpg" alt="" />
@@ -104,7 +104,7 @@ const Index = () => {
       </section>
 
       <section id="Experience" className="Experience_container">
-        <h2 className="SectionTitle">My Experience</h2>
+        <h2 className="SectionTitle"></h2>
         <div className="Experience">
           <div className="skills_wrapper">
             <h3>My skills</h3>
@@ -145,7 +145,17 @@ const Index = () => {
             </div>
           </div>
           <div className="Experience_wrapper">
-            <div className="Experience_Card">
+            {/* <div className="Experience_Card">
+              <h3>Software Developer</h3>
+              <p>Dec 2024 - Jan 2025</p>
+              <ul>
+                <li>Developed Portfolio App</li>
+                <li>Developed Weather App</li>
+                <li>Developed Todo App</li>
+                <li>Developed Calculator App</li>
+              </ul>
+            </div> */}
+            {/* <div className="Experience_Card">
               <h3>Software Developer</h3>
               <p>Dec 2024 - Jan 2025</p>
               <ul>
@@ -164,17 +174,7 @@ const Index = () => {
                 <li>Developed Todo App</li>
                 <li>Developed Calculator App</li>
               </ul>
-            </div>
-            <div className="Experience_Card">
-              <h3>Software Developer</h3>
-              <p>Dec 2024 - Jan 2025</p>
-              <ul>
-                <li>Developed Portfolio App</li>
-                <li>Developed Weather App</li>
-                <li>Developed Todo App</li>
-                <li>Developed Calculator App</li>
-              </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -261,7 +261,7 @@ const Index = () => {
             </div>
             <div className="info_wrapper">
               <i className="ri-mail-line"></i>
-              <span>example@gmail.com</span>
+              <span>blesonphilipmca2024@gmail.com</span>
             </div>
             <div className="social">
               <i className="ri-instagram-line"></i>
