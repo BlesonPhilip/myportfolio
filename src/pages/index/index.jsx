@@ -147,7 +147,7 @@ const Index = () => {
               </div>
               <div className="skill">
                 <h4>Express Js</h4>
-                <div className="skillBar skillNode" data-value="70%"></div>
+                <div className="skillBar skillExpress" data-value="80%"></div>
               </div>
             </div>
           </div>

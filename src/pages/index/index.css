@@ -339,6 +339,10 @@
   width: 60% !important;
 }
 
+.skillExpress::after {
+  width: 80% !important;
+}
+
 .Experience_wrapper {
   width: 50%;
   display: flex;
