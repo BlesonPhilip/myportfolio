@@ -72,75 +72,45 @@
   background-color: var(--primary-color);
   color: #1e1e1e;
 }
-/* .headerImage img {
-  width: 300px;
-} */
-
 .headerImage {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
-  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .headerImage img {
-  width: 550px;
-  height: 550px;
-  z-index: 2;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.borderAnimation {
-  position: absolute;
-  width: 580px;
-  height: 580px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: conic-gradient(
-      from var(--angle),
-      transparent 95%,
-      var(--primary-color) 96%
-    );
-    border-radius: 50%;
-    animation: spin 2s infinite linear;
-  }
-  &::before {
-    filter: blur(25px);
-    opacity: 0.5;
-  }
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-@keyframes spin {
-  to {
-    --angle: 360deg;
-  }
+.headerImage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1440px) {
   .headerImage img {
-    width: 500px;
-    height: 500px;
-  }
-  .borderAnimation {
-    position: absolute;
-    height: 505px;
-    width: 505px;
+    width: 300px;
+    height: 300px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .headerImage img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .headerContainer {
     flex-direction: column-reverse;
@@ -572,9 +542,18 @@
 }
 .contact .contact_details .info_wrapper {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15 px;
   align-items: center;
   color: aliceblue;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.contact .contact_details .info_wrapper span {
+  word-break: break-all;
+  font-size: 16px;
+  line-height: 1.4;
 }
 .contact .contact_details .social {
   display: flex;
@@ -583,9 +562,9 @@
 }
 .contact .contact_details .social i,
 .contact .contact_details .info_wrapper i {
-  font-size: 20px;
-  height: 40px;
-  width: 50px;
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
   background-color: #fff;
   color: #8754ff;
   display: flex;

@@ -1,4 +1,3 @@
-import React from "react";
 import Nav from "../../components/Navbar/nav";
 import "./index.css";
 import { ReactTyped } from "react-typed";
@@ -42,7 +41,7 @@ const Index = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "Bleson Philip Cv.pdf"; // Path to your CV file
+                link.href = "Bleson Philip.pdf"; // Path to your CV file
                 link.download = "Bleson Philip Cv.pdf"; // Suggested download filename
                 link.click();
               }}
@@ -51,8 +50,7 @@ const Index = () => {
             </button>
           </div>
           <div className="headerImage">
-            <img src="f2.jpg" alt="hero-img" />
-            <div className="borderAnimation"></div>
+            <img src="c.jpg" alt="hero-img" />
           </div>
         </div>
       </div>
@@ -68,10 +66,12 @@ const Index = () => {
               <div className="aboutCardContent">
                 <h3>Frontend Developer</h3>
                 <p>
-                  Skilled in building responsive and interactive web
-                  applications using React, HTML, CSS, and JavaScript.
-                  Passionate about creating seamless user experiences and
-                  implementing modern design principles.
+                  Skilled in developing responsive, interactive web applications
+                  using React.js, HTML5, CSS3, and modern JavaScript (ES6+).
+                  Experienced in crafting seamless user experiences with clean,
+                  maintainable code and following best practices in UI/UX
+                  design. Passionate about building visually appealing,
+                  high-performance web interfaces.
                 </p>
               </div>
             </div>
@@ -80,10 +80,13 @@ const Index = () => {
               <div className="aboutCardContent">
                 <h3>Backend Developer</h3>
                 <p>
-                  Proficient in building scalable and efficient server-side
-                  applications using Node.js and Express.js. Experienced in
-                  working with databases like MongoDB and implementing RESTful
-                  APIs for seamless data communication.
+                  Proficient in building scalable and high-performance
+                  server-side applications using Node.js and Express.js.
+                  Experienced in designing and implementing RESTful APIs for
+                  efficient data handling and seamless client-server
+                  communication. Skilled in working with databases like MongoDB,
+                  with a strong focus on data modeling, security, and
+                  performance optimization.
                 </p>
               </div>
             </div>
@@ -185,12 +188,13 @@ const Index = () => {
           <div className="project">
             <img src="portfolio-image-01.png" alt="1" />
             <div className="project_content">
-              <h3>Calculator</h3>
+              <h3>Real-time Chat App</h3>
               <p>
-                A user-friendly calculator web application built using HTML,
-                CSS, and JavaScript. Designed to perform basic arithmetic
-                operations with a clean interface and responsive layout for
-                seamless usability across devices.
+                A responsive real-time chat application built using the MERN
+                stack (MongoDB, Express.js, React.js, Node.js) with Socket.IO
+                for live communication. Features include user authentication,
+                live messaging, typing indicators, online status, and a clean,
+                responsive UI optimized for both desktop and mobile devices.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
@@ -211,12 +215,17 @@ const Index = () => {
           <div className="project">
             <img src="portfolio-image-03.png" alt="1" />
             <div className="project_content">
-              <h3>Todo-App</h3>
+              <h3>Bazario - E-commerce Web Application</h3>
               <p>
-                A simple yet efficient task management application built using
-                React. Allows users to add, edit, and delete tasks with a clean
-                and intuitive interface. Designed to improve productivity
-                through organized task tracking.
+                A dynamic full-stack e-commerce application built using the MERN
+                stack (MongoDB, Express.js, React.js, Node.js). Features secure
+                JWT authentication, role-based access control, product
+                management with image uploads (Multer & Cloudinary), and a
+                shopping cart system using React Context and localStorage.
+                Includes a fully responsive UI/UX, delivering a seamless
+                shopping experience across devices. This project showcases my
+                ability to develop secure, scalable, and user-friendly web
+                applications from scratch.
               </p>
               <i className="ri-arrow-right-line"></i>
             </div>
